@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display ">
+                <div class="artboard artboard-demo phone-2">
+                    <div>
+                        <!-- stat -->
+                        <div class="stats shadow w-full">
+                            <div class="stat">
+                                <p class="flex justify-center text-3xl font-bold">Balance</p>
+                                <div id="balance" class="stat-value flex justify-center">0</div>
+                            </div>
+                        </div>
+                        <!-- stat end -->
+
+                        <div class="divider"></div>
+                            <div class="flex justify-center space-x-2">
+                                <button id="swich-cash-add-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Add Money</button>
+                                <button id="swich-cashout-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Cash Out</button>
+                            </div>
+                        <div class="divider"></div>
+
+                        <!-- hero input -->
+                        <div id="addContainer" class="hero bg-base-200">
+                            <div class="hero-content flex-col">
+                              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+                                  <div class="form-control">
+                                    
+                                    <input type="text" placeholder="Your Number" class="input input-bordered" id="inpu-amount" required />
+                                  </div>
+                                  <div class="form-control">
+                                    
+                                    <input type="password" placeholder="Your Pin" class="input input-bordered" id="password" required />
+                                  </div>
+                                  <div class="form-control mt-6">
+                                    <button class="btn btn-primary" id="add-money">Add Money</button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                         <!-- hero input end -->
+
+                         <!-- hero input for cashout -->
+                         <div id="cashout-container" class="hero bg-base-200 hidden">
+                            <div class="hero-content flex-col">
+                              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+                                  <div class="form-control">
+                                    
+                                    <input type="text" placeholder="Your Number" class="input input-bordered" id="cashout-inpu-amount" required />
+                                  </div>
+                                  <div class="form-control">
+                                    
+                                    <input type="password" placeholder="Your Pin" class="input input-bordered" id="cashout-password" required />
+                                  </div>
+                                  <div class="form-control mt-6">
+                                    <button class="btn btn-primary" id="cash-out">Cash out</button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                         <!-- hero input for cashout end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./addmoney.js"></script>
+</body>
+
+</html>
